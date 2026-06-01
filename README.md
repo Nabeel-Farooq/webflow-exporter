@@ -1,8 +1,4 @@
-# 🌏 Python Webflow Exporter
-
-[![PyPI version](https://img.shields.io/pypi/v/python-webflow-exporter)](https://pypi.org/project/python-webflow-exporter/)
-[![python](https://img.shields.io/badge/Python-3.10-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://spdx.org/licenses/MIT.html)
+# Webflow Exporter
 
 A command-line tool to recursively scrape and download all assets (HTML, CSS, JS, images, media) from a public `.webflow.io` website. It also provides the option to automatically remove the Webflow badge from downloaded JavaScript files.
 
