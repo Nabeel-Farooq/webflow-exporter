@@ -1,12 +1,32 @@
 version: 2
+
 updates:
-  # Enable version updates for pip
-  - package-ecosystem: "pip"
-    # Look for `requirements.txt` in the `root` directory
-    directory: "/"
-    # Check the pip registry for updates every day (weekdays)
-    schedule:
-      interval: "daily"
-    groups:
-      minor-patch:
-        update-types: [minor, patch]
+
+* package-ecosystem: "pip"
+  directory: "/"
+
+  schedule:
+  interval: "daily"
+
+  open-pull-requests-limit: 10
+
+  labels:
+
+  * dependencies
+  * python
+
+  commit-message:
+  prefix: "deps"
+
+  groups:
+  minor-patch:
+  update-types:
+  - minor
+  - patch
+
+  ignore:
+
+  * dependency-name: "*"
+    update-types:
+
+    * version-update:semver-major
